@@ -4,6 +4,7 @@ const addFirstBtn = document.querySelector('#addFirst');
 const addLastBtn = document.querySelector('#addLast');
 const removeFirstBtn = document.querySelector('#removeFirst');
 const removeLastBtn = document.querySelector('#removeLast');
+const reverseListBtn = document.querySelector('#reverseList');
 const clearListBtn = document.querySelector('#clearList');
 
 addFirstBtn.addEventListener('click', () =>
@@ -17,6 +18,8 @@ removeFirstBtn.addEventListener('click', () => removeFirst());
 removeLastBtn.addEventListener('click', removeLast);
 
 clearListBtn.addEventListener('click', () => clearList());
+
+reverseListBtn.addEventListener('click', () => reverseList());
 
 let guestListArray = [];
 
@@ -50,6 +53,11 @@ function removeLast() {
     guestListArray.pop();
     printGuestList();
 }
+
+const reverseList = () => {
+    guestListArray.reverse();
+    printGuestList();
+};
 
 const clearList = () => {
     guestList.replaceChildren();
