@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guest List</title>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <main id="app">
+            <input
+                type="text"
+                id="guest-name"
+                placeholder="Please enter guest's name"
+            />
+            <div id="actions">
+                <button type="button" id="addFirst">Add to the top</button>
+                <button type="button" id="addLast">Add to the bottom</button>
+                <button type="button" id="removeFirst">Remove first</button>
+                <button type="button" id="removeLast">Remove last</button>
+                <button type="button" id="reverseList">Reverse list</button>
+                <button type="button" id="clearList">Clear list</button>
+            </div>
+            <div id="guest-list"></div>
+        </main>
+    </body>
+</html>
